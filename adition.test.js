@@ -1,8 +1,8 @@
 //operations should return sum of two numbers
 
-const {addition} = require("./addition")
+const {addition, addOns} = require("./addition")
 
-test("2+4=6", () => {
+test("2 + 4 = 6", () => {
     expect(addition(2,4)).toBe(6)
 })
 
@@ -16,3 +16,12 @@ test.each([[3, 4, 7], [5, -10, -5], [0, 2, 2]])(
     expect(addition(a, b)).toBe(expected);
   }
 );
+
+//*********************EDITS*******************************
+test("2 + 3 + 4 = 9", () => {
+    expect(addOns(2, 3, 4)).toBe(9)
+})
+
+test.skip("11 + 12 + 10 = 33", () => {
+    expect(addOns(11, 12, 10)).toBe(33)
+})
