@@ -1,2 +1,3 @@
 const addition = (a, b) => a + b
-module.exports = {addition}
+const addOns = (x, y, z) => x + y + z
+module.exports = {addition, addOns}
